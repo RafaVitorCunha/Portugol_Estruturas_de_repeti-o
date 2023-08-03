@@ -1,0 +1,27 @@
+* IMCOMPLETO
+
+programa {
+funcao inicio() {
+   
+inteiro numero1
+inteiro numero2
+inteiro proximo = 0
+inteiro limite
+inteiro n
+
+numero1 = 1
+numero2 = 0
+
+escreva("* Informe o limite (500).. ")
+leia(limite)
+escreva(numero2, " ", numero1, " ")
+
+para(n = 1; proximo >= limite; n++) {
+proximo = numero1 + numero2
+escreva(proximo, " ")
+numero2 = numero1
+numero1 = proximo
+}
+
+}
+}
