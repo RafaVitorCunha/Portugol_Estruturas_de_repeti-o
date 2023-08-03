@@ -1,27 +1,32 @@
-* IMCOMPLETO
-
 programa {
 funcao inicio() {
    
-inteiro numero1
-inteiro numero2
+inteiro numero1 = 1
+inteiro numero2 = 0
 inteiro proximo = 0
 inteiro limite
-inteiro n
-
-numero1 = 1
-numero2 = 0
+inteiro vezes 
+inteiro n = 1
 
 escreva("* Informe o limite (500).. ")
 leia(limite)
-escreva(numero2, " ", numero1, " ")
 
-para(n = 1; proximo >= limite; n++) {
-proximo = numero1 + numero2
-escreva(proximo, " ")
-numero2 = numero1
-numero1 = proximo
+se(limite <= numero2) {
+escreva("| ", n, "º = ", numero2, " ")
+n++
 }
 
+se(limite > numero2 e limite >= numero1) {
+escreva("| ", n, "º = ", numero1, " ")
+n++
+}
+para(vezes = 1; proximo <= limite; vezes++) {
+proximo = numero1 + numero2
+escreva("| ", n, "º = ", proximo, " ") 
+numero2 = numero1
+numero1 = proximo
+n++
+}
+ 
 }
 }
