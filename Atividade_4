@@ -1,0 +1,23 @@
+programa {
+funcao inicio() {
+    
+inteiro base
+inteiro base_cons
+inteiro expoente
+inteiro vezes
+inteiro resultado
+
+escreva("* Informe a base.. ")
+leia(base)
+base_cons = base
+escreva("* Informe o expoente.. ")
+leia(expoente)
+
+para(vezes = 1; vezes < expoente; vezes++) {
+base = base * base_cons
+}
+resultado = base
+escreva("* ", base_cons, " elevado a ", expoente, " é igual a ", resultado)
+
+}
+}
