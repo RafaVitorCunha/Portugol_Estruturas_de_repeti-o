@@ -1,0 +1,22 @@
+programa {
+funcao inicio() {
+
+real paisA = 80000
+real taxaA = 3
+real paisB = 200000
+real taxaB = 1,5
+inteiro anos
+
+taxaA = taxaA / 100
+taxaA = paisA * taxaA
+taxaB = taxaB / 100
+taxaB = paisB * taxaB
+
+para(anos = 1; paisA <= paisB; anos++) {
+paisA = paisA + taxaA
+paisB = paisB + taxaB
+}
+escreva("* Levarão ", anos, " anos para que a população do país A ultrapasse a do país B.")
+
+}
+}
